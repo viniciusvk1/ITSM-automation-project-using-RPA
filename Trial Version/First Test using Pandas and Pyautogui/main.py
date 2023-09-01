@@ -12,22 +12,14 @@ automation.hotkey('winleft', 's')
 automation.typewrite('bloco de notas')
 time.sleep(0)
 automation.press('enter')
+
 time.sleep(2)
 
-# Iterar sobre os códigos e escrevê-los no Bloco de Notas
 for index, row in data_frame.iterrows():
     identificador = row['Teste']
 
     automation.write(identificador)
-    automation.press('enter')  # Pressione Enter para criar uma nova linha
+    automation.press('enter')  # Pressione 'enter' após escrever o identificador
 
-# Fechar o Bloco de Notas
-automation.hotkey('alt', 'f4')
+    time.sleep(0.5)  # Aguarde um curto período antes de escrever o próximo identificador
 
-time.sleep(2)
-
-automation.press('tab')
-
-time.sleep(2)
-
-automation.press('enter')

@@ -15,7 +15,7 @@ time.sleep(0.4)
 automation.click(x=156, y=402)
 
 for index, row in data_frame.iterrows():
-    identificador = row['Identificador']
+    identificador = str(row['Identificador'])
 
     automation.write(identificador)
     automation.press('enter')

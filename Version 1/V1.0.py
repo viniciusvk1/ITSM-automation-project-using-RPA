@@ -24,7 +24,7 @@ for index, row in data_frame.iterrows():
     automation.click(x=580, y=354)
 
     automation.moveTo(x=605, y=392)
-    time.sleep(1.5)
+    time.sleep(1.8)
     automation.click(x=605, y=392)
 
     automation.moveTo(x=1054, y=356)

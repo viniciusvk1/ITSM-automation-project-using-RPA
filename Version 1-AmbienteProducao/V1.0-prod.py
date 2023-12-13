@@ -2,7 +2,7 @@ import pyautogui as automation
 import pandas as pd
 import time
 
-excel_file_path = '/Version 1-AmbienteDeTeste\\ExcelTestSSO.xlsx'
+excel_file_path = 'C:\\Users\\vinicius.almeida\\OneDrive - DISTRIBUIDORA DE MEDICAMENTOS SANTA CRUZ LTDA\\Documentos\\PycharmProjects\\ITSM-automation-project-using-RPA\\Version 1-AmbienteProducao\\ExcelTestSSO.xlsx'
 column_name = 'Identificador'
 
 data_frame = pd.read_excel(excel_file_path)
